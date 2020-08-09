@@ -8,7 +8,8 @@ def testRange(min, max, evens):
       result = isEven(i)
       if(not result and evens):
          raise Exception('Test failed. Got: isEven({}) = {}. Expected: '\
-                         'isEven({}) = {}.'.format(i, str(result)))
+                         'isEven({}) = {}.'.format(i, str(result), i,\
+                                                   str(evens)))
    print('Test passed.')
 
 def main():
