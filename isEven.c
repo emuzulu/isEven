@@ -30000,6 +30000,7 @@ int isEven(int i) {
 		return 1;
 	}
 	if ( i >= 10000){
-		return isEven(10000);
+		return isEven(i - 10000);
 	}
+	return 0;
 }
