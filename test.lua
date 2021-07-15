@@ -6,7 +6,7 @@ local function testRange(min, max, evens)
 	for i = min, max, 2 do
 		if not evens then i = i - 1 end
 		local result = isEven(i)
-		assert((result and not evens), ('Test failed. Got: isEven(%d) = %s. Expected: isEven(%d) = %s.'):format(i, tostring(result), i, tostring(evens)))
+		assert((result and evens), ('Test failed. Got: isEven(%d) = %s. Expected: isEven(%d) = %s.'):format(i, tostring(result), i, tostring(evens)))
 	end
 	print('Test passed.')
 end
