@@ -19999,6 +19999,9 @@ def isEven(i):
         return True
     if(i==9999) and (i%2 == 0) and (i&1 == 0):  #This checks if the number is even or not
         return True
-    if i >= 10000: #This checks if the number is even or not
-        return isEven(i-10000)
+    if(i==10000) and (i%2 == 0) and (i&1 == 0): #This checks if the number is even or not
+        return True
+    if i >= 10001: #This checks if the number is even or not
+        return isEven(i-10001)
+
     return False
